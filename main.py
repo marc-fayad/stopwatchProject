@@ -1,3 +1,12 @@
-import tkinter
+from controller import *
 
-print('hi')
+
+def main():
+    app = QApplication([])
+    window = Controller()
+    window.show()
+    app.exec()
+
+
+if __name__ == '__main__':
+    main()

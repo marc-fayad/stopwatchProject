@@ -9,17 +9,18 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(370, 571)
-        MainWindow.setMinimumSize(QtCore.QSize(370, 571))
-        MainWindow.setMaximumSize(QtCore.QSize(370, 571))
-        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+class Ui_Stopwatch(object):
+    def setupUi(self, Stopwatch):
+        Stopwatch.setObjectName("Stopwatch")
+        Stopwatch.resize(370, 571)
+        Stopwatch.setMinimumSize(QtCore.QSize(370, 571))
+        Stopwatch.setMaximumSize(QtCore.QSize(370, 571))
+        self.centralwidget = QtWidgets.QWidget(parent=Stopwatch)
         self.centralwidget.setObjectName("centralwidget")
         self.time_label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.time_label.setGeometry(QtCore.QRect(20, 50, 321, 111))
+        self.time_label.setGeometry(QtCore.QRect(10, 50, 341, 111))
         font = QtGui.QFont()
+        font.setFamily("PT Mono")
         font.setPointSize(50)
         self.time_label.setFont(font)
         self.time_label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
@@ -50,7 +51,7 @@ class Ui_MainWindow(object):
         self.lap3.setText("")
         self.lap3.setObjectName("lap3")
         self.lap4 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.lap4.setGeometry(QtCore.QRect(20, 470, 321, 31))
+        self.lap4.setGeometry(QtCore.QRect(20, 480, 321, 31))
         font = QtGui.QFont()
         font.setPointSize(15)
         self.lap4.setFont(font)
@@ -82,38 +83,38 @@ class Ui_MainWindow(object):
         font.setPointSize(20)
         self.lap_button.setFont(font)
         self.lap_button.setObjectName("lap_button")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
+        Stopwatch.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(parent=Stopwatch)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 370, 22))
         self.menubar.setObjectName("menubar")
         self.menuStopwatch = QtWidgets.QMenu(parent=self.menubar)
         self.menuStopwatch.setObjectName("menuStopwatch")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
+        Stopwatch.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(parent=Stopwatch)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        Stopwatch.setStatusBar(self.statusbar)
         self.menubar.addAction(self.menuStopwatch.menuAction())
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(Stopwatch)
+        QtCore.QMetaObject.connectSlotsByName(Stopwatch)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, Stopwatch):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.time_label.setText(_translate("MainWindow", "00:00:00.00"))
-        self.start_button.setText(_translate("MainWindow", "Start"))
-        self.reset_button.setText(_translate("MainWindow", "Reset"))
-        self.quit_button.setText(_translate("MainWindow", "Quit"))
-        self.laps_label.setText(_translate("MainWindow", "Laps:"))
-        self.lap_button.setText(_translate("MainWindow", "Lap"))
-        self.menuStopwatch.setTitle(_translate("MainWindow", "Stopwatch"))
+        Stopwatch.setWindowTitle(_translate("Stopwatch", "Stopwatch"))
+        self.time_label.setText(_translate("Stopwatch", "00:00:00.00"))
+        self.start_button.setText(_translate("Stopwatch", "Start"))
+        self.reset_button.setText(_translate("Stopwatch", "Reset"))
+        self.quit_button.setText(_translate("Stopwatch", "Quit"))
+        self.laps_label.setText(_translate("Stopwatch", "Laps:"))
+        self.lap_button.setText(_translate("Stopwatch", "Lap"))
+        self.menuStopwatch.setTitle(_translate("Stopwatch", "Stopwatch"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    Stopwatch = QtWidgets.QMainWindow()
+    ui = Ui_Stopwatch()
+    ui.setupUi(Stopwatch)
+    Stopwatch.show()
     sys.exit(app.exec())
