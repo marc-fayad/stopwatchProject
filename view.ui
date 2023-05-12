@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>370</width>
-    <height>571</height>
+    <height>449</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>370</width>
-    <height>571</height>
+    <height>449</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>370</width>
-    <height>571</height>
+    <height>449</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -102,42 +102,6 @@
      <string>Quit</string>
     </property>
    </widget>
-   <widget class="QLabel" name="lap3">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>440</y>
-      <width>321</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lap4">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>480</y>
-      <width>321</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QLabel" name="laps_label">
     <property name="geometry">
      <rect>
@@ -153,7 +117,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Laps:</string>
+     <string>Current Lap:</string>
     </property>
    </widget>
    <widget class="QLabel" name="lap1">
@@ -161,24 +125,6 @@
      <rect>
       <x>20</x>
       <y>360</y>
-      <width>321</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>15</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lap2">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>400</y>
       <width>321</width>
       <height>31</height>
      </rect>
